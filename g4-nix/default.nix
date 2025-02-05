@@ -24,6 +24,8 @@ pkgs.stdenv.mkDerivation rec {
     expat
     qt5.full
     zlib
+    cmake
+    gnumake
   ];
 
   cmakeFlags = [
