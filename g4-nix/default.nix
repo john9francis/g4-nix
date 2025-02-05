@@ -50,6 +50,10 @@ pkgs.stdenv.mkDerivation rec {
     make install -j10
   ";
 
+  shellHook = "
+    source $out/bin/geant4.sh
+  ";
+
   meta = with pkgs.lib; {
     description = "Geant4 simulation toolkit";
     homepage = "https://geant4.web.cern.ch/";

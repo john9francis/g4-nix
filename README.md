@@ -1,24 +1,21 @@
 # Geant4 installation using nix
 
-# Dependencies: 
-- Nix
-- Docker
+# Platform specific requirements:
+- On windows, you must use WSL
 
-# Running:
-macOs or Linux:
+# Geant4 details
+- [X] qt5
+- [X] datasets
+- [X] examples
+
+# Running on your own machine
+1. [Download nix](https://nixos.org/download/)
+2. Open a terminal and run: `nix-build`
+3. Wait for Geant4 to install and enjoy
+
+
+# Useful nix commands
+To free up build artifacts and stuff:
 ```sh
-docker run -it -v $(pwd)/g4-nix:/g4-nix nixos/nix
-```
-Windows:
-```sh
-docker run -it -v ${PWD}/g4-nix:/g4-nix nixos/nix
-```
-
-Then go into g4-nix and run `nix-build`
-
-# Postinstall setup
-
-Add the following command to your ~/.zshrc file.
-```sh
-source CMAKE_INSTALL_PREFIX/bin/geant4.sh
+nix-collect-garbage
 ```
