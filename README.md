@@ -12,9 +12,8 @@
 1. [Download nix](https://nixos.org/download/)
 2. Open a terminal and run: `nix-build`
 3. Wait for Geant4 to install
-4. Run `nix-shell`
-5. Interact with the geant4 apps
-
+4. Enjoy running Geant4 apps. Congratulations, you have escaped DLL hell.
+* Note: Use `nix-shell` to have access to cmake and make if you need to build a Geant4 app.
 
 # Useful nix commands
 To free up build artifacts and stuff:
@@ -24,3 +23,4 @@ nix-collect-garbage
 
 # TODO
 - [ ] Make it so it only has qt installed when you run it locally, not in docker
+- [ ] Push another version to docker hub
