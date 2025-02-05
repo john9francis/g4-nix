@@ -16,7 +16,11 @@
 * Note: Use `nix-shell` to have access to cmake and make if you need to build a Geant4 app.
 
 # Useful nix commands
-To free up build artifacts and stuff:
+To open a nix shell with only cmake and make:
+```sh
+nix-shell -p cmake gnumake
+```
+To free up nix build artifacts and stuff:
 ```sh
 nix-collect-garbage
 ```
