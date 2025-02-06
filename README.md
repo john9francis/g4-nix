@@ -1,5 +1,15 @@
 # Geant4 installation using nix
 
+This repository includes a default.nix file that will automatically install and setup Geant4. This will work on macOS, linux, and windows (with windows subsystem for linux). It also works on docker without visualization (see the docker folder)
+
+# Dependencies
+- [nix](https://nixos.org/download/)
+
+# Why nix?
+1. Easy syntax. You can look over the default.nix file and get an idea of exactly what is being installed on your computer.
+2. Reproducability. Nix allows you to write installation scripts that you can share with anyone who want to duplicate your setup.
+3. Version control. You can specify versions for all your packages and nix will ensure consistency with the versions. This saves you from the annoyance of having a dependency update without your knowledge and break your configuration.
+
 # Platform specific requirements:
 - On windows, you must use WSL
 
