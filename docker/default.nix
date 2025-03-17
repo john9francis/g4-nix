@@ -2,7 +2,7 @@
 
 pkgs.stdenv.mkDerivation rec {
   pname = "geant4";
-  version = "11.3.0"; # Change to your required version
+  version = "11.3.0";
 
   src = pkgs.fetchurl {
     url = "https://gitlab.cern.ch/geant4/geant4/-/archive/v11.3.0/geant4-v11.3.0.tar.gz";
@@ -15,14 +15,8 @@ pkgs.stdenv.mkDerivation rec {
   ];
 
   buildInputs = with pkgs; [
-    mesa
-    libGL
-    xorg.libX11
-    xorg.libXmu
-    xorg.libXext
     xercesc
     expat
-    qt5.full
     zlib
     cmake
     gnumake

@@ -32,4 +32,4 @@ nix-collect-garbage
 ```
 
 # Try this out on docker!
-Using nix I created a geant4 docker image that's only about 2.5 GB. Check it out on [docker hub.](https://hub.docker.com/r/john9francis/g4-nix)
+Using nix I created a geant4 docker image that's only about 2 GB. Check it out on [docker hub.](https://hub.docker.com/r/john9francis/g4-nix)

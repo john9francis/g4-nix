@@ -12,3 +12,9 @@ docker login
 docker push john9francis/g4-nix:11.3.0
 docker push john9francis/g4-nix:latest
 ```
+
+```sh
+docker build -t g4-nix .
+docker tag g4-nix john9francis/g4-nix:11.3.0-slim
+docker push john9francis/g4-nix:11.3.0-slim
+```
